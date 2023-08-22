@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Itinerary Generator</title>
+  <style>
+    /* Style for the table */
+#itineraryTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style for table header */
+  #itineraryTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Style for table rows */
+  #itineraryTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for table cells */
+  #itineraryTable td {
+    padding: 8px;
+  }
+  </style>
+  
+   <link rel = "stylesheet" href= "forefront.css">
+</head>
+<body>
+  <h1>Travel Itinerary Generator</h1>
+  <form id="itineraryForm">
+    <label for="cities">Cities to Visit:</label>
+    <input type="text" id="cities" required>
+    <label for="days">Number of Days:</label>
+    <input type="number" id="days" required>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required>
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" required>
+    <button type="button" onclick="generateItinerary()">Generate</button>
+    
+    
+  </form>
+  <div id="itinerary"></div>
+  
+  <div id="download"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+  <script src="forefront1.js"></script> <!-- Replace with the file name containing the JavaScript code -->
+</body>
+</html>

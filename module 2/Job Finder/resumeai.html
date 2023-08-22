@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Itinerary Generator</title>
+   <link rel = "stylesheet" href= "forefront.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <h1>AI Resume Generator</h1>
+  <form id="details">
+    <label for="Qualification">Qualification:</label>
+    <input type="text" id="qualification" required>
+    <label for="experience">Years of Experience:</label>
+    <input type="number" id="experience" required>
+    <label for="jobdetails">Job Description :</label>
+    <br>
+    <textarea class = "jobdetails" id="jobdetails"></textarea>
+    <div class="row mt-5 p-5 text-center">
+    <button type="button" onclick="generateresume()">Generate</button>
+    </div>
+    </form>
+  <div id="resume"></div>
+   <div id="download"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+  <script src="forefront1.js"></script> <!-- Replace with the file name containing the JavaScript code -->
+</body>
+</html>
